@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-
 const HeaderWrapper = styled.div`
   position: fixed;
   top: 0;
@@ -39,29 +38,28 @@ const buttonStyles = css`
   text-decoration: none;
   cursor: pointer;
   letter-spacing: 2px;
-  color: #387D8C;
+  color: #387d8c;
   font-family: 'WantedSans-SemiBold';
 `;
 
 const MyPageButton = styled.a`
-  ${buttonStyles} 
+  ${buttonStyles};
 `;
 
 const LoginButton = styled.a`
-  ${buttonStyles} 
+  ${buttonStyles};
 `;
-
 
 export default function Header() {
   return (
     <HeaderWrapper>
-      <Logo href='/'>
-        <LogoImg src='./logo.png' alt="Logo" />
+      <Logo href="/">
+        <LogoImg src="./logo.png" alt="Logo" />
       </Logo>
-      
+
       <Nav>
-        <MyPageButton href='/mypage'>MyPage</MyPageButton>
-        <LoginButton href='/login'>Login</LoginButton>
+        <MyPageButton href="/mypage">MyPage</MyPageButton>
+        <LoginButton onClick={() => alert('준비 중입니다.')}>Login</LoginButton>
       </Nav>
     </HeaderWrapper>
   );
