@@ -258,7 +258,7 @@ export default function MainPage() {
         <BtnContainer>
           <Reset onClick={contentReset}>질문 초기화</Reset>
           <Start onClick={goToInterview}>모의 면접 시작</Start>
-          <Store>질문 저장</Store>
+          <Store onClick={() => alert('준비 중입니다.')}>질문 저장</Store>
         </BtnContainer>
       )}
     </MainContainer>

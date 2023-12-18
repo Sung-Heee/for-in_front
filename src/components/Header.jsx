@@ -58,7 +58,9 @@ export default function Header() {
       </Logo>
 
       <Nav>
-        <MyPageButton href="/mypage">MyPage</MyPageButton>
+        <MyPageButton onClick={() => alert('준비 중입니다.')}>
+          MyPage
+        </MyPageButton>
         <LoginButton onClick={() => alert('준비 중입니다.')}>Login</LoginButton>
       </Nav>
     </HeaderWrapper>
